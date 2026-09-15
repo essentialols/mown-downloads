@@ -1,0 +1,284 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<title>WVS Database</title>
+	<META CONTENT="WVS Data ArchiveJDS,Survey, JDSurvey, online data analysis, encuestas,WVS Database,World Values Survey Data-Archive" NAME="keywords">
+	<META CONTENT="World Values Survey Data-Archive Online Survey analysis website" NAME="description">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=10, minimum-scale=0.1, user-scalable=yes">
+
+<script src="js/dtree/jquery/jquery.min.js"></script>
+
+	<script language="JavaScript" src="js/jds.js"></script>
+  <script type="text/javascript" src="js/fusioncharts.js"></script>
+  <script type="text/javascript" src="js/fusioncharts.maps.js"></script>
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/aj.css?version=2021-02-20" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="js/grid/skins/dhtmlxgrid_dhx_web.css">
+<script src="js/grid/dhtmlxcommon.js"></script>
+<script src="js/grid/dhtmlxgrid.js"></script>
+<script src="js/grid/dhtmlxgridcell.js"></script>
+<script src="js/grid/ext/dhtmlxgrid_start.js"></script>
+<script src="js/grid/ext/dhtmlxgrid_form.js"></script>
+<script  src="js/grid/ext/dhtmlxgrid_splt.js"></script>
+<script src="js/grid/ext/dhtmlxgrid_nxml.js"></script>
+<script  src="js/grid/ext/dhtmlxgrid_filter.js"></script>
+<script src="js/grid/ext/dhtmlxgrid_drag.js"></script>
+<script src="js/grid/ext/dhtmlxgrid_keymap_access.js"></script>
+
+
+	<link rel="STYLESHEET" type="text/css" href="js/grid/dhtmlxtabbar.css">
+	<script  src="js/tabbar/dhtmlxtabbar.js"></script>
+
+<script>
+dhtmlx.skin = "dhx_web";
+</script>
+</head> 
+<body>
+<form name=Datos method=Post action="">
+	<input type=hidden name=ulthost value="WVS">
+	<input type=hidden name=CMSID>
+<script language="JavaScript">
+	var datos=document.Datos;
+	var dialogBox=false;
+	var dialogDiv="";
+	function Home() {
+		datos.action="AJOnline.jsp";
+	}
+</script>
+
+<div id=PAGE class="AJPage">
+ 	
+
+	<div id=FICHA class="SMPSeccion">
+					
+		<div class=clear>&nbsp;</div>
+		
+		<div class=SMPApartado2>Release notes</div>
+		Please use the following citation when referring to this file in the different versions:<br>
+Inglehart, R., C. Haerpfer, A. Moreno, C. Welzel, K. Kizilova, J. Diez-Medrano, M. Lagos, P. Norris, E. Ponarin & B. Puranen et al. (eds.). 2014. World Values Survey: Round Six - Country-Pooled Datafile Version: <a href='http://www.worldvaluessurvey.org/WVSDocumentationWV6.jsp'>www.worldvaluessurvey.org/WVSDocumentationWV6.jsp</a>. Madrid: JD Systems Institute.
+<br><br>
+Version history:<br>
+-v2018-09-12:Current official release<br>
+Inclusion of Haiti 2016 and India 2012<br>
+General revision, mostly of missing labels.<br>
+-v2016-01-01:Official release<br>
+Errata in Argentina fixed: Child qualties (V13-V22) is reversed.<br>
+Inclusion of India 2012 (two regions missing from this sample)<br>
+- v2015-04-18: Fourth release<br>
+Includes new country: Georgia<br>
+Adds Welzel's Overall Secular Values and Emancipative indexes and component sub-indexes<br>
+- v2014-11-07: Third release<br>
+Includes new countries: Argentina, Brazil, Bahrain, Hong Kong, India, South Africa and Thailand<br>
+- v2014-04-29: Second release<br>
+Fixes errors for the following variables:<br>
+<li> V144: Religious denomination<br>
+<li> V58: How many children do you have<br>
+Inclusion of additional variables:<br>
+<li> Y001 post-materislist index 12-item<br>
+- v2014-04-29: First release<br>
+<b><span style='color:red'>NOTE</span>: Use Integrated version compatible with WVS/EVS to merge with old logitudinal 1981-2009 aggregates.</b><br>
+<b>NOTE: Use V258 as weight variable when needed. V2 is the country variable.</b><br>	<p><span style='color:red;font-weight:bold'>NOTE:</span> Study on values realized in the countries of Europe by EVS research network in the 1981-2008 period is not included into the current 	data-set and is avaliable for both downloading and online-analysis at: 	<a target='_blank' href='http://www.europeanvaluesstudy.eu/frmShowpage?v_page_id=2361023477820045'>http://www.europeanvaluesstudy.eu</a> </p>
+		
+		<div class=clear>&nbsp;</div>
+		
+		
+					<div class="SMPApartado">
+						World Values Survey Wave 6 (2010-2014)
+					</div>
+					<div style="text-align:justify;width:95%;">
+						
+					</div>
+								
+					<div class=SMPApartado2>Questionnaire</div>
+<div class=clear>&nbsp;</div><div class=SMPTexto>
+<a class=pdf_lnk onclick="javascript:DocDownload('1101')">WV6 Official Questionnaire v4 June2012.pdf</a>
+<div class=clear></div><div class=clear>&nbsp;</div><div class=clear>&nbsp;</div></div>
+
+					<div class=SMPApartado2>Documentation</div>
+<div class=clear>&nbsp;</div><div class=SMPTexto>
+<a class=pdf_lnk onclick="javascript:DocDownload('7761')">WV6 Codebook v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=pdf_lnk onclick="javascript:DocDownload('7942')">WV6 Results By Country v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=pdf_lnk onclick="javascript:DocDownload('11242')">WVSA Citation  format.pdf</a>
+<div class=clear></div><div class=clear>&nbsp;</div><div class=clear>&nbsp;</div></div>
+
+					
+					<div class=SMPApartado2>Statistical Data Files</div>
+<div class=clear>&nbsp;</div><div class=SMPTexto>
+<a class=zip_lnk onclick="javascript:DocDownloadLicense('11887')">WV6 Data csv v20201117.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11103')">WV6 Data R v20201117.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11104')">WV6 Data sas v20201117.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11105')">WV6 Data sav v20201117.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11106')">WV6 Data stata v20201117.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><div class=clear>&nbsp;</div></div>
+
+					
+					
+					
+					<div class="SMPApartado">
+						World Values Survey 2010-2014 - MENA Module
+					</div>
+					<div style="text-align:justify;width:95%;">
+						
+					</div>
+								
+					<div class=SMPApartado2>Questionnaire</div>
+<div class=clear>&nbsp;</div><div class=SMPTexto>
+<a class=doc_lnk onclick="javascript:DocDownload('2742')">WV6 Official Questionnaire v5 SilatechMenaModule Arabic.doc</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=doc_lnk onclick="javascript:DocDownload('2745')">WV6 Official Questionnaire v5 SilatechMenaModule English.doc</a>
+<div class=clear></div><div class=clear>&nbsp;</div><div class=clear>&nbsp;</div></div>
+
+					
+					
+					
+					
+					
+					
+					<div class="SMPApartado">
+						World Values Survey 2010-2014 - Old Releases
+					</div>
+					<div style="text-align:justify;width:95%;">
+						
+					</div>
+								
+					
+					
+					
+					
+					<div class=SMPApartado2>Older versions of Data Files</div>
+<div class=clear>&nbsp;</div><div class=SMPTexto>
+<a class=zip_lnk onclick="javascript:DocDownloadLicense('3603')">WV6 Data ascii delimited v 2015 04 18 (delimited with comma)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('5811')">WV6 Data ascii delimited v 2016 01 01 (Ascii delimited + structure)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('5812')">WV6 Data R v 2016 01 01 (R Workspace)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('7762')">WV6 Data R v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('3604')">WV6 Data rdata v 2015 04 18 (R workspace)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('5813')">WV6 Data sas v 2016 01 01 (SAS)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('7763')">WV6 Data Sas v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('3592')">WV6 Data spss v 2015 04 18 (Spss SAV)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('5809')">WV6 Data spss v 2016 01 01 (Spss SAV)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('7510')">WV6 Data Spss v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('3598')">WV6 Data stata v 2015 04 18 (Stata DTA)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('3593')">WV6 Data stata v 2015 04 18 (Stata program + Ascii Data)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('5810')">WV6 Data stata v 2016 01 01 (Stata DTA)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('7509')">WV6 Data Stata v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><div class=clear>&nbsp;</div></div>
+
+					
+					
+					<div class="SMPApartado">
+						OLDVERSION
+					</div>
+					<div style="text-align:justify;width:95%;">
+						
+					</div>
+								
+					
+					
+					
+					
+					<div class=SMPApartado2>Older versions of Data Files</div>
+<div class=clear>&nbsp;</div><div class=SMPTexto>
+<a class=xls_lnk onclick="javascript:DocDownload('3843')">WVS EVS Integrated Dictionary Codebook v 2014 09 22 (Excel)</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('8390')">WVS Longitudinal 1981-2016 r v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('8391')">WVS Longitudinal 1981-2016 sas v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('8388')">WVS Longitudinal 1981-2016 spss v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('8389')">WVS Longitudinal 1981-2016 stata v20180912</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11407')">WVS TimeSeries 1981 2020 csv v2 0.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11408')">WVS TimeSeries 1981 2020 R rdata v2 0.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11405')">WVS TimeSeries 1981 2020 R rds v2 0.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11217')">WVS TimeSeries 1981 2020 R v1 6.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11218')">WVS TimeSeries 1981 2020 sas v1 6.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11406')">WVS TimeSeries 1981 2020 sas v2 0.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11215')">WVS TimeSeries 1981 2020 spss v1 6.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11403')">WVS TimeSeries 1981 2020 spss v2 0.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11216')">WVS TimeSeries 1981 2020 stata v1 6.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><a class=zip_lnk onclick="javascript:DocDownloadLicense('11404')">WVS TimeSeries 1981 2020 stata v2 0.zip</a>
+<div class=clear></div><div class=clear>&nbsp;</div><div class=clear>&nbsp;</div></div>
+
+					
+					
+		
+	</div>
+<input type=hidden name=CndWAVE value="6">
+<input type=hidden name=SAID value="0">
+<input type=hidden name=DOID>
+<script language=JavaScript>
+	function DocDownload(doid) {
+		datos.DOID.value=doid;
+		datos.action="AJDownload.jsp";
+		datos.submit();
+		datos.action="";
+	}
+	function DocDownloadLicense(doid) {
+		datos.DOID.value=doid;
+		datos.action="AJDownloadLicense.jsp";
+		datos.submit();
+		datos.action="";
+	}
+	
+	function autoResize() {
+  	try   {
+  		document.body.style.backgroundColor ="#f9f9f9";
+  		objeto("PAGE").style.backgroundColor ="#f9f9f9";
+			parent.autoResizeFrame(objeto("FICHA").scrollHeight+10);
+		} catch (mensaje) {
+			alert(mensaje);
+		} 
+	}
+	setTimeout(function(){autoResize()},30);
+</script> 
+
+ 
+<div class=AJClear style="margin-top:20px;">&nbsp;</div>
+			</div> <!-- Fondo -->
+	</div><!-- Page -->
+<input type=hidden name=AJArchive value="WVS Data Archive">
+<input type=hidden name=EdFunction>
+<input type=hidden name=DOP value="">
+<input type=hidden name=XU value="">
+<input type=hidden name=PUB>
+<script language=JavaScript>
+	function  SetPubDoc(id) {
+		datos.PUB.value=id;
+		datos.action="WVSPublicationsDocuments.jsp";
+		datos.target="_top";
+		datos.submit();
+	}
+	function  SetPubBook(id) {
+		datos.PUB.value=id;
+		datos.action="WVSPublicationsBooks.jsp";
+		datos.target="_top";
+		datos.submit();
+	}
+	function  SetPubPaper(id) {
+		datos.PUB.value=id;
+		datos.action="WVSPublicationsPapers.jsp";
+		datos.target="_top";
+		datos.submit();
+	}
+	function  SetPubPres(id) {
+		datos.PUB.value=id;
+		datos.action="WVSPublicationsPresentations.jsp";
+		datos.target="_top";
+		datos.submit();
+	}
+</script>
+
+
+<script>
+		
+				var geodatos=encodeURIComponent("20.98.142.231\tx\tx\tx\tx\tx\tx\tx");
+				$.get("jdsStatJD.jsp?ID="+geodatos+
+					"&url=http%3A%2F%2F192.168.33.22%3A8380%2FAJDocumentationSmpl.jsp&referer=null&cms=DocumentationSmpl",
+					function (resp2) {
+				});
+
+			
+</script>
+	
+	</form>
+</body>
+</html>
+ 
