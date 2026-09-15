@@ -1,0 +1,222 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<title>WVS Database</title>
+	<META CONTENT="WVS Data ArchiveJDS,Survey, JDSurvey, online data analysis, encuestas,WVS Database,World Values Survey Data-Archive" NAME="keywords">
+	<META CONTENT="World Values Survey Data-Archive Online Survey analysis website" NAME="description">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=10, minimum-scale=0.1, user-scalable=yes">
+	<script language="JavaScript" src="js/jds.js"></script>
+	<script language="JavaScript" src="/maps/FusionCharts.js"></script>
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/ajtypography.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/homepage.css" rel="stylesheet" type="text/css">
+	
+	
+	<link href="css/news.css" rel="stylesheet" type="text/css">
+	
+	
+	<link href="css/events.css" rel="stylesheet" type="text/css">
+	
+	
+	<link href="css/custom_search.css" rel="stylesheet" type="text/css">
+	
+
+	<link href="css/ajWVS.css" rel="stylesheet" type="text/css">
+	<script type='text/javascript' src="js/jquery.tools.min.js"></script>
+
+	<link rel="STYLESHEET" type="text/css" href="js/grid/dhtmlxtabbar.css">
+	<script src="js/grid/dhtmlxcommon.js"></script>
+	<script src="js/grid/dhtmlxtabbar.js"></script>
+	
+<script>
+dhtmlx.skin = "dhx_web";
+</script>
+
+</head>
+<body style="background-color:transparent;background-image:none;"><div id="fb-root"></div>
+ 
+<form name=Datos method=Post action="">
+	<input type=hidden name=ulthost value="WVS">
+	<input type=hidden name=CMSID>
+<script language="JavaScript">
+	var datos=document.Datos;
+	var dialogBox=false;
+	var dialogDiv="";
+	function Home() {
+		datos.action="wvs.jsp";
+		datos.submit();
+	}
+	function SetContent(clave) {
+		datos.CMSID.value=clave;
+		if (clave=="#Home") {
+			datos.action="wvs.jsp";
+		} else if (clave.startsWith("#")) {
+			datos.action="WVS"+clave.substring(1)+".jsp";
+		} else {
+			datos.action="WVSContents.jsp";
+		}
+		datos.submit();
+	}
+</script>
+
+
+		<div id=ficha style="border:1px solid Gainsboro;">
+			<div style="min-height:20px;float:left;width:100%;background-color:#F1F1F1;border-bottom:1px solid Gainsboro;border-right:1px solid Gainsboro;text-align:center;padding-top:7px;font-size:14px;">
+				<div class=AJBotonBack onclick="JavaScript:Volver()"></div>
+				<div style="float:left;width:380px;text-align:center;"><b>WV6 Data csv v20201117.zip</b></div>
+			</div>
+			<div class=clear>&nbsp;</div>
+			<div class=AJDocSeccion style="min-height:12px;text-align:justify;">
+				<div class=AJRegistration>
+      		In order to download the file you are asked to fill the following registration form and agree on the 
+      		"Conditions of Use". Please read it carefully before proceeding to the download.<p>
+      	</div>
+			</div>
+			<div class=clear></div>
+			<div class=AJDocSeccion style="min-height:12px;background-color:#F9F9F9;">
+				<b>PERSONAL DATA</b>
+			</div>
+			<div class=clear></div>
+			<div class=AJDocSeccion style="min-height:12px;">
+				<div class=AJRegistrationLbl style="width:90px;">Title (position):</div>
+				<div class=AJRegistration><input name="LITITLE" type="text" class=AJRegistrationFld maxlength=255 style="width:300px"
+					value=""> </div>
+				<div class=clear></div>
+				<div class=AJRegistrationLbl style="width:90px;">Full name:</div>
+				<div class=AJRegistration><input name="LINOMBRE" type="text" class=AJRegistrationFld maxlength=255 style="width:300px"
+					value=""> </div>
+				<div class=clear></div>
+				<div class=AJRegistrationLbl style="width:90px;">Company/Institution:</div>
+				<div class=AJRegistration><input name="LIEMPRESA" type="text" class=AJRegistrationFld maxlength=255 style="width:300px"
+				value=""> </div>
+				<div class=clear></div>
+				<div class=AJRegistrationLbl style="width:90px;">E-mail:</div>
+				<div class=AJRegistration><input name="LIEMAIL" type="text" class=AJRegistrationFld maxlength=255 style="width:300px"
+					value=""> </div>
+				<div class=clear></div>
+				<div class=clear></div>
+			</div>
+			<div class=clear></div>
+			<div class=AJDocSeccion style="min-height:12px;background-color:#F9F9F9;">
+				<b>FILE USAGE</b>
+			</div>
+			<div class=clear></div>
+			<div class=AJDocSeccion style="min-height:12px;">
+				<div class=AJRegistrationLbl style="width:90px;">Project title:</div>
+				<div class=AJRegistration><input name="LIPROJECT" type="text" class=AJRegistrationFld maxlength=255  style="width:300px"> </div>
+				<div class=clear></div>
+				<div class=AJRegistrationLbl style="width:90px;">Intended use:</div>
+				<div class=AJRegistration>
+					<select name="LIUSE"   style="width:100%" class=AJRegistrationFld> 
+						<option value="">&nbsp;</option>
+						<option value="1" ">Instruction</option>
+						<option value="2" ">Academic research project</option>
+						<option value="3" ">Dissertation</option>
+						<option value="4" ">Policy-related analysis</option>
+						<option value="5" ">Others (please specify)</option>
+					</select>
+				</div>
+				<div class=clear></div>
+				<div class=AJRegistrationLbl>Brief description of the purpose of application:</div>
+				<div class=clear></div>
+				<div class=AJRegistration>
+					<textarea name="LIPURPOSE"  class=AJRegistrationFld style="width:390px;" rows="4"></textarea>
+				</div>
+				<div class=clear></div>
+			</div>
+			<div class=clear></div>
+			<div class=AJDocSeccion style="min-height:12px;background-color:#F9F9F9;">
+				<b>CONDITIONS OF USE</b>
+			</div>
+			<div class=clear></div>
+			<div class=AJDocSeccion>
+				<div style="width:99%;overflow-y:auto;border:1px solid Gainsboro;text-align:justify;font-size:10px;">
+<p>These data files are available without restrictions, provided:</p>
+<p>a) that they are used for non-profit purposes; </p>
+<p>b) correct citations are provided and sent to the <strong>World Values Survey Association</strong> for each publication of results based in part or entirely on these data files;</p>
+<p>c) the data files themselves are <strong>not redistributed</strong>;</p>
+<p>d) proper citation to the WVS data is included into the references list of the publication (citation format available for downloading in the <strong>Documentation section</strong>).</p>
+
+				</div>			
+				<div class=clear></div>
+				<div class=AJRegistration>
+					I have read the 'Conditions of use' and agree with them <input name="LIAGREE" type="checkbox" value="1">
+				</div>
+				<div class=clear></div>
+				<div class=AJBotonBack style="margin-top:10px;" onclick="JavaScript:Volver()"></div>				
+				<div id=botonDwn class=AJDocumentDownloadBtn onclick="JavaScript:DocDownload()" title="Download the file (requires completing form and accept conditions of use)">&nbsp;</div>
+				<div class=clear></div>
+			</div>
+			<div class=clear></div>
+		</div>
+<input type=hidden name=DOID value="11887">
+<input type=hidden name=CndWAVE value="6">
+<input type=hidden name=SAID value="0">
+<script language=JavaScript>
+	var descargando=false;
+	function DocDownload() {
+		try {
+			if (descargando) {
+				alert("The file is already downloading. If it takes too much, please try again later.");
+				return;
+			}
+			if (datos.LINOMBRE.value=="") {
+				alert("Please enter the name");
+				datos.LINOMBRE.focus();
+				return;				
+			}
+			if (datos.LIEMPRESA.value=="") {
+				alert("Please enter the Company/Institution's name");
+				datos.LIEMPRESA.focus();
+				return;				
+			}
+			if (datos.LIEMAIL.value=="") {
+				alert("Please enter the e-mail");
+				datos.LIEMAIL.focus();
+				return;				
+			}
+			if (datos.LIUSE.selectedIndex<1) {
+				alert("Please enter the intended use");
+				datos.LIUSE.focus();
+				return;				
+			}
+			if (!datos.LIAGREE.checked) {
+				alert("You must accept the license agreement before download is enabled");
+				datos.LIUSE.focus();
+				return;				
+			}
+			alert("The transfer will start now. Please allow some time for the file to download.");
+			descargando=true;
+			datos.action="AJDownload.jsp";
+			datos.submit();
+			datos.action="";
+		} catch (mensaje) {
+			alert(mensaje);
+		}
+	}
+	function Volver() {
+		datos.action="AJDocumentationSmpl.jsp";
+		datos.submit();
+	}
+	function Inicia() {
+		try {
+			var miHeight=getDivHeight("ficha");
+			parent.autoResizeFrame(miHeight);
+		} catch (mensaje) {
+		 	alert(mensaje);
+		}
+	}
+	setTimeout(function(){Inicia()},50)
+
+</script>
+		<input type=hidden name=AJArchive value="WVS Data Archive">
+		<input type=hidden name=EdFunction>
+		<input type=hidden name=DOP value="">
+	</form>
+</body>
+</html>
+ 
